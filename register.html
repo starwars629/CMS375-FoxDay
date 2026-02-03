@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register for Fox Day</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <main>
+            <h2>Student Information</h2>
+            <form action="process.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="event">Select an Event</label>
+                <select id="event" name="event" required>
+                    <option value="">-- Choose an Event --</option>
+                </select><br><br>
+
+                <label>Year:<br></label>
+                <input type="radio" id="f" name="year" value="freshman" required>
+                <label for="f">Freshman</label><br>
+                <input type="radio" id="so" name="year" value="sophomore" required>
+                <label for="so">Sophomore</label><br>
+                <input type="radio" id="j" name="year" value="junior" required>
+                <label for="j">Junior</label><br>
+                <input type="radio" id="se" name="year" value="senior" required>
+                <label for="se">Senior</label><br><br>
+                
+                <label for="message">What are you most excited about?</label>
+                <input type="text" id="message" name="message"/><br><br>
+
+                <label for="promise">I promise to keep the Fox Day surprise secret</label>
+                <input type="checkbox" id="promise" name="promise" required><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <script>
+                // Fetch events from events.php and populate the select box
+                fetch('events.json')
+                    .then(response => response.json())
+                    .then(events => {
+                        const selectBox = document.getElementById('event');
+                        
+                        events.forEach(event => {
+                            const option = document.createElement('option');
+                            option.value = event.title;
+                            option.textContent = event.title;
+                            selectBox.appendChild(option);
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error loading events:', error);
+                    });
+            </script>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="events.php">View Events</a>
+                <a href="index.html">Back to Home</a>
+            </div>
+        </main>
+
+        <footer>Happy Fox Day! 🦊🎉</footer>
+    </body>
+</html>

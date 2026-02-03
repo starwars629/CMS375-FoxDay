@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Fox Taxidermy",
+        "time": "1:45pm",
+        "location": "Lakeside",
+        "description": "Fill a fox stuffed animal Build-a-Bear style!"
+    },
+    {
+        "title": "Mystery Destination Bus Ride",
+        "time": "8:00am",
+        "location": "Bush Science Center Parking Lot",
+        "description": "Hop aboard for a surprise adventure! We're taking a mystery trip to an exciting destination. Pack your curiosity and sense of adventure!"
+    },
+    {
+        "title": "Fox Day Picnic and Lemonade",
+        "time": "12:00pm",
+        "location": "Mill's Lawn",
+        "description": "Enjoy a relaxing picnic on the lawn with fresh lemonade, sandwiches, and snacks. Bring a blanket and soak up the sunshine!"
+    },
+    {
+        "title": "Campus Clue Hunt: Find the Fox",
+        "time": "12:30pm",
+        "location": "Starts at Mills Memorial Chapel",
+        "description": "Follow clues across campus to find the hidden fox! Work in teams to solve riddles and discover secret spots around Rollins. First team to find the fox wins prizes!"
+    },
+    {
+        "title": "Surprise Pop-Up Concert",
+        "time": "7:00pm",
+        "location": "Mill's Lawn",
+        "description": "Mystery musical guests will perform live! Come enjoy an evening of great music under the stars. You won't want to miss this surprise performance!"
+    },
+    {
+        "title": "Photo Booth: Fox Ears Edition",
+        "time": "12:00pm",
+        "location": "Mill's Lawn",
+        "description": "Strike a pose with fun fox-themed props and accessories! Get your picture taken with fox ears, tails, and more. Perfect for Instagram-worthy memories!"
+    }
+]
